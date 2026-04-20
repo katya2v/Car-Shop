@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./asset/css/FormStyle.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Main</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="form-container">
+        <form>
+            <section>
+                <h3>Personal info</h3>
+                <label>First Name <input type="text" name="fname"></label>
+                <label>Last Name <input type="text" name="lname"></label>
+                <label>Birthday <input type="date" name="bday"></label>
+                <label>Gender:
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </label>
+                <label>Drive experience
+                    <select name="experience">
+                        <option>--</option>
+                        <option>expert</option>
+                        <option>more than 10</option>
+                        <option>5-10</option>
+                        <option>2-5</option>
+                        <option>less than 2</option>
+                        <option>beginner</option>
+                    </select>
+                </label>
+            </section>
+
+            <section>
+                <h3>Contacts</h3>
+                <label>Email <input type="email" name="email"></label>
+                <label>Phone <input type="tel" name="phone"></label>
+                <label>Address <input type="text" name="address"></label>
+            </section>
+
+            <section>
+                <h3>Car info</h3>
+                <label>Brand <select name="brand">
+                        <option>Ford</option>
+                        <option>Toyota</option>
+                        <option>BMW</option>
+                    </select></label>
+                <label>Model <input type="text" name="model"></label>
+                <label><input type="checkbox" name="used"> Used</label>
+                <label>Color:
+                    <input type="radio" name="color" value="red"> Red
+                    <input type="radio" name="color" value="black"> Black
+                    <input type="radio" name="color" value="blue"> Blue
+                    <input type="radio" name="color" value="white"> White
+                    <input type="radio" name="color" value="grey"> Grey
+                </label>
+                <label>Price <input type="range" min="10" max="80" step="10" name="price"></label>
+            </section>
+
+            <div class="buttons">
+                <button type="reset">Cancel</button>
+                <button type="submit">Ok</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
