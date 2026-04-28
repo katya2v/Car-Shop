@@ -14,7 +14,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Main</a></li>
+                <li><a class="link" href="index.html">Main</a></li>
             </ul>
         </nav>
     </header>
@@ -27,8 +27,11 @@
                 <label>Last Name <input type="text" name="lname"></label>
                 <label>Birthday <input type="date" name="bday"></label>
                 <label>Gender:
-                    <input type="radio" name="gender" value="male"> Male
-                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
                 </label>
                 <label>Drive experience
                     <select name="experience">
@@ -59,14 +62,35 @@
                     </select></label>
                 <label>Model <input type="text" name="model"></label>
                 <label><input type="checkbox" name="used"> Used</label>
-                <label>Color:
-                    <input type="radio" name="color" value="red"> Red
-                    <input type="radio" name="color" value="black"> Black
-                    <input type="radio" name="color" value="blue"> Blue
-                    <input type="radio" name="color" value="white"> White
-                    <input type="radio" name="color" value="grey"> Grey
+
+                <label id="color">Color:
+                    <input type="radio" id="red" name="color" value="red">
+                    <label for="red"> Red</label>
+
+                    <input type="radio" id="black" name="color" value="black">
+                    <label for="black"> Black</label>
+
+                    <input type="radio" id="blue" name="color" value="blue">
+                    <label for="blue"> Blue</label>
+
+                    <input type="radio" id="white" name="color" value="white">
+                    <label for="white"> White</label>
+
+                    <input type="radio" id="grey" name="color" value="grey">
+                    <label for="grey"> Grey</label>
                 </label>
-                <label>Price <input type="range" min="10" max="80" step="10" name="price"></label>
+                <label for="price">Price:</label>
+                <input type="range" id="price" name="price" min="10" max="80" step="10" value="40">
+                <div class="ticks">
+                    <span>10</span>
+                    <span>20</span>
+                    <span>30</span>
+                    <span>40</span>
+                    <span>50</span>
+                    <span>60</span>
+                    <span>70</span>
+                    <span>80</span>
+                </div>
             </section>
 
             <div class="buttons">
