@@ -1,12 +1,11 @@
 body {
   margin: 0;
-  padding: 0;
 }
 
 header {
   background: #222;
   color: #fff;
-  padding: 20px 0;
+  padding: 20px;
   text-align: center;
 }
 
@@ -26,16 +25,15 @@ ul {
 }
 
 .form-container {
-  display: flex;
   justify-content: center;
-  margin: 40px auto;
-  max-width: 1000px;
+  margin: 10px auto;
+  padding: 5px;
 }
 
 form {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
   background: #ffffff;
   padding: 30px;
   border-radius: 12px;
@@ -43,9 +41,9 @@ form {
   font-family: Arial, sans-serif;
 }
 
-section {
-  flex: 1 1 300px;
+legent {
   display: flex;
+  flex: 1 1 300px;
   flex-direction: column;
   gap: 12px;
   padding: 15px;
@@ -75,6 +73,12 @@ form input:focus,
 form select:focus {
   border-color: #007bff;
   outline: none;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex: 1 1 300px;
 }
 
 .buttons {

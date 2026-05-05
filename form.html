@@ -21,7 +21,8 @@
 
     <main class="form-container">
         <form>
-            <section>
+            <fieldset>
+            <legent>
                 <h3>Personal info</h3>
                 <label>First Name <input type="text" name="fname"></label>
                 <label>Last Name <input type="text" name="lname"></label>
@@ -29,7 +30,7 @@
                 <label>Gender:
                     <input type="radio" id="male" name="gender" value="male">
                     <label for="male">Male</label>
-
+                    
                     <input type="radio" id="female" name="gender" value="female">
                     <label for="female">Female</label>
                 </label>
@@ -44,16 +45,20 @@
                         <option>beginner</option>
                     </select>
                 </label>
-            </section>
+            </legent>
+            </fieldset>
 
-            <section>
+            <fieldset>
+            <legent>
                 <h3>Contacts</h3>
                 <label>Email <input type="email" name="email"></label>
                 <label>Phone <input type="tel" name="phone"></label>
                 <label>Address <input type="text" name="address"></label>
-            </section>
+            </legent>
+            </fieldset>
 
-            <section>
+            <fieldset>
+            <legent>
                 <h3>Car info</h3>
                 <label>Brand <select name="brand">
                         <option>Ford</option>
@@ -82,16 +87,17 @@
                 <label for="price">Price:</label>
                 <input type="range" id="price" name="price" min="10" max="80" step="10" value="40">
                 <div class="ticks">
-                    <span>10</span>
-                    <span>20</span>
-                    <span>30</span>
-                    <span>40</span>
-                    <span>50</span>
-                    <span>60</span>
-                    <span>70</span>
-                    <span>80</span>
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                    <option>50</option>
+                    <option>60</option>
+                    <option>70</option>
+                    <option>80</option>
                 </div>
-            </section>
+            </legent>
+            </fieldset>
 
             <div class="buttons">
                 <button type="reset">Cancel</button>
