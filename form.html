@@ -21,16 +21,16 @@
 
     <main class="form-container">
         <form>
+
             <fieldset>
-            <legent>
-                <h3>Personal info</h3>
+                <legend>Personal info</legend>
                 <label>First Name <input type="text" name="fname"></label>
                 <label>Last Name <input type="text" name="lname"></label>
                 <label>Birthday <input type="date" name="bday"></label>
                 <label>Gender:
                     <input type="radio" id="male" name="gender" value="male">
                     <label for="male">Male</label>
-                    
+
                     <input type="radio" id="female" name="gender" value="female">
                     <label for="female">Female</label>
                 </label>
@@ -45,26 +45,26 @@
                         <option>beginner</option>
                     </select>
                 </label>
-            </legent>
             </fieldset>
 
+
             <fieldset>
-            <legent>
-                <h3>Contacts</h3>
+                <legend>Contacts</legend>
                 <label>Email <input type="email" name="email"></label>
                 <label>Phone <input type="tel" name="phone"></label>
                 <label>Address <input type="text" name="address"></label>
-            </legent>
             </fieldset>
 
+
             <fieldset>
-            <legent>
-                <h3>Car info</h3>
-                <label>Brand <select name="brand">
+                <legend>Car info</legend>
+                <label>Brand
+                    <select name="brand">
                         <option>Ford</option>
                         <option>Toyota</option>
                         <option>BMW</option>
-                    </select></label>
+                    </select>
+                </label>
                 <label>Model <input type="text" name="model"></label>
                 <label><input type="checkbox" name="used"> Used</label>
 
@@ -84,20 +84,22 @@
                     <input type="radio" id="grey" name="color" value="grey">
                     <label for="grey"> Grey</label>
                 </label>
+
                 <label for="price">Price:</label>
-                <input type="range" id="price" name="price" min="10" max="80" step="10" value="40">
-                <div class="ticks">
-                    <option>10</option>
-                    <option>20</option>
-                    <option>30</option>
-                    <option>40</option>
-                    <option>50</option>
-                    <option>60</option>
-                    <option>70</option>
-                    <option>80</option>
-                </div>
-            </legent>
+                <input type="range" id="price" name="price" min="10" max="80" step="10" value="40" list="tickmarks">
+
+                <datalist id="tickmarks">
+                    <option value="10"></option>
+                    <option value="20"></option>
+                    <option value="30"></option>
+                    <option value="40"></option>
+                    <option value="50"></option>
+                    <option value="60"></option>
+                    <option value="70"></option>
+                    <option value="80"></option>
+                </datalist>
             </fieldset>
+
 
             <div class="buttons">
                 <button type="reset">Cancel</button>
